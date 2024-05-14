@@ -11,4 +11,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Administrativo.CCB.Dominio\Administrativo.CCB.Dominio.csproj" />
+    <ProjectReference Include="..\Administrativo.CCB.Repository\Administrativo.CCB.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
