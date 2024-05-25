@@ -8,8 +8,9 @@ namespace Administrativo.CCB.Dominio.Entity
 {
     public class Usuario : EntityBase.EntityBase
     {
-        public string NomeUsuario { get; set; }
-        public string Senha { get; set; }
-        public string ConfirmaSenha { get; set; }
+        public string Username { get; set; }
+        public string PasswordHash { get; set; }
+        public string EmailAddress { get; set; }
+        public DateTime DateOfJoining { get; set; }
     }
 }
