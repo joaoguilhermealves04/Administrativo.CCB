@@ -8,5 +8,8 @@ namespace Adiministativo.CCB.Aplication.Model
 {
     public class LoginModel
     {
+        public Guid Id { get;private set; }
+        public string Username { get; private set; }
+        public string PasswordHash { get; private set; }
     }
 }
