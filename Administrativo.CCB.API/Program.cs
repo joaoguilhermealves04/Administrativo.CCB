@@ -1,3 +1,4 @@
+using Administativo.CCB.infrastructure.Ioc;
 using Administativo.CCB.infrastructure.Ioc.Autorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -6,6 +7,9 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddAdministativo(builder.Configuration);
+builder.Services.AddFundoBiblico(builder.Configuration);
 
 var key = builder.Configuration["Jwt:Key"];
 builder.Services.AddSingleton(new JwtTokenGenerator(key));

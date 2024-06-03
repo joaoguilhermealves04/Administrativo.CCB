@@ -15,6 +15,7 @@
     <ProjectReference Include="..\Adiministativo.CCB.Aplication\Adiministativo.CCB.Aplication.csproj" />
     <ProjectReference Include="..\Administrativo.CCB.Dominio\Administrativo.CCB.Dominio.csproj" />
     <ProjectReference Include="..\Administrativo.CCB.Repository\Administrativo.CCB.Repository.csproj" />
+    <ProjectReference Include="..\FundoBiblicoSite.CCB.Repository\FundoBiblicoSite.CCB.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿
 using Administrativo.CCB.Repository.Context;
+using FundoBiblicoSite.CCB.Repository.Contexto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
