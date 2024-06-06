@@ -33,6 +33,11 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddAuthorization(options =>
+{
+    AuthorizationPolicies.AuthorizationDeAcessos(options);
+});
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
