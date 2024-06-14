@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administrativo.CCB.Dominio.Entity.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -18,9 +19,6 @@ namespace Adiministativo.CCB.Aplication.Model
         public ClaimsIdentity? Role { get; private set; }
         public DateTime Date { get; private set; }
 
-        public RegistreModel()
-        {
-            
-        }
+        public Atividades atividade { get; set; }
     }
 }

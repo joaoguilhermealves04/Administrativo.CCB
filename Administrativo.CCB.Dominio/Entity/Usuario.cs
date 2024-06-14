@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administrativo.CCB.Dominio.Entity.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -15,6 +16,7 @@ namespace Administrativo.CCB.Dominio.Entity
         public string Token { get; set; }
         public DateTime DateOfJoining { get; set; }
         public ClaimsIdentity? Role { get; set; }
+        public Atividades Atividade { get; set; }
 
     }
 }

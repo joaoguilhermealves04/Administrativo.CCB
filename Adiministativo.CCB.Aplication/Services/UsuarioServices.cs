@@ -66,10 +66,12 @@ namespace Adiministativo.CCB.Aplication.Services
                     Username = model.Username,
                     PasswordHash = encryptedPassword,
                     EmailAddress = model.EmailAddress,
-                    Token = _jwtTokenService.GenerateToken(model.Username,model.Role), // Método para gerar token
+                    Token = _jwtTokenService.GenerateToken(model.Username, model.Role), // Método para gerar token
                     DateOfJoining = DateTime.UtcNow,
                     Role = model.Role,
-                    Date = DateTime.UtcNow
+                    Date = DateTime.UtcNow,
+                    Atividade = model.atividade
+                    
                 };
 
                 // Adicionar o novo usuário ao repositório
